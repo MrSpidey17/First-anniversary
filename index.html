@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Story ♥ 1 Year Together</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+  ═══════════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ═══════════════════════════════════════════
+       MUSIC TOGGLE
+  ═══════════════════════════════════════════ -->
+  <button class="music-btn" id="musicBtn" title="Toggle music">
+    <span class="music-icon">♪</span>
+  </button>
+
+  <!-- Hidden audio — replace src with your own music file -->
+  <audio id="bgMusic" loop>
+    <source src="Song.mp3" type="audio/mpeg"/>
+  </audio>
+
+  <!-- ═══════════════════════════════════════════
+       SMOOTH SCROLL NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <a href="#hero">Home</a>
+    <a href="#timeline">Our Story</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#game">Game</a>
+    <a href="#message">Letter</a>
+    <a href="#secret">Secret</a>
+    <a href="#future">Dreams</a>
+    <a href="#final">♥</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — HERO / LANDING
+  ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <!-- Animated gradient background -->
+    <div class="hero-bg"></div>
+    <!-- Floating petals -->
+    <div class="petals" id="petals"></div>
+
+    <!-- Easter Egg 1: hidden star top-left -->
+    <span class="easter-egg" data-msg="You found our first star! ✨ This is where we first said hello." style="top:8%; left:5%;">★</span>
+
+    <div class="hero-content fade-in">
+      <p class="hero-subtitle">A whole year of</p>
+      <!-- ✏️ CUSTOMIZE: Change names below -->
+      <h1 class="hero-title">Us<span class="heart-pulse">♥</span>Jiu</h1>
+      <p class="hero-desc">
+        <!-- ✏️ CUSTOMIZE: Change this message -->
+        365 days of laughter, love, and everything in between.<br/>
+        This little corner of the internet is entirely Ours.
+      </p>
+      <a href="#timeline" class="btn-primary">Start the Journey</a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">scroll down ↓</div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — TIMELINE
+  ═══════════════════════════════════════════ -->
+  <section id="timeline" class="section timeline-section">
+    <div class="section-header">
+      <h2>Our Moments</h2>
+      <p>Every chapter of our story</p>
+    </div>
+
+    <!-- Easter Egg 2: hidden heart on section header -->
+    <span class="easter-egg" data-msg="The beginning of forever started right here 💕" style="top:40px; right:30px; font-size:0.7rem; opacity:0.15;">♥</span>
+
+    <div class="timeline">
+
+      <!-- ✏️ CUSTOMIZE: Add/edit timeline items -->
+      <div class="timeline-item" data-index="0">
+        <div class="timeline-dot">1</div>
+        <div class="timeline-card">
+          <div class="timeline-img-wrap">
+            <!-- ✏️ Replace src with your photo URL -->
+            <img src="photo1.jpeg" alt="How We Met"/>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-date">✏️ <b>26 Nov, 2024</b></span>
+            <h3>The Day We Met</h3>
+            <p>✏️ <i>It started with you asking about my <b>exam routine</b>… and now you’re written into <b>my daily routine</b> forever 📖❤️</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-index="1">
+        <div class="timeline-dot">2</div>
+        <div class="timeline-card">
+          <div class="timeline-img-wrap">
+            <img src="photo2.jpeg" alt="First Date"/>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-date">✏️ <b>28 Oct, 2025</b></span>
+            <h3>Our First Date</h3>
+            <p>✏️ <i>At <b>Altitude</b>, between smiles and surprises, I realized <b>you were my favorite gift forever</b> 🎁❤️</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-index="2">
+        <div class="timeline-dot">3</div>
+        <div class="timeline-card">
+          <div class="timeline-img-wrap">
+            <img src="photo3.jpeg" alt="First Trip"/>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-date">✏️ <b>2 Feb, 2026</b></span>
+            <h3>Our First Adventure</h3>
+            <p>✏️ <i>Our first adventure at the <b>zoo</b>… but I only remember getting <b>lost in you</b> 🐾❤️</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-index="3">
+        <div class="timeline-dot">4</div>
+        <div class="timeline-card">
+          <div class="timeline-img-wrap">
+            <img src="photo4.jpeg" alt="Milestone"/>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-date">✏️ <b>21 Feb, 2025</b></span>
+            <h3>Our Special Day</h3>
+            <p>✏️ <i>That moment carried a <b>gentle touch of your love</b>, even before it was real… and those <b>gifts</b> will always mean the <b>world to me</b> ❤️</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-index="4">
+        <div class="timeline-dot">♥</div>
+        <div class="timeline-card highlight-card">
+          <div class="timeline-img-wrap">
+            <img src="photo5.png" alt="One Year"/>
+          </div>
+          <div class="timeline-info">
+            <span class="timeline-date">✏️ <b>30 Mar, 2025</b></span>
+            <h3>One Whole Year 🎉</h3>
+            <p>✏️ <i>That night, <b>at midnight</b>, my <b>dream came true</b> and it’s <b>still alive</b> in <b>every heartbeat</b> ❤️</i></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — QUIZ
+  ═══════════════════════════════════════════ -->
+  <section id="quiz" class="section quiz-section">
+    <div class="section-header">
+      <h2>How Well Do You Know Us?</h2>
+      <p>A little quiz just for you 💌</p>
+    </div>
+
+    <div class="quiz-container" id="quizContainer">
+
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgress"></div></div>
+      <p class="quiz-counter" id="quizCounter">Question 1 of 5</p>
+
+      <div class="quiz-question-wrap" id="quizQuestionWrap">
+        <!-- Questions injected by JS -->
+      </div>
+
+      <div class="quiz-result hidden" id="quizResult">
+        <div class="quiz-result-emoji" id="resultEmoji"></div>
+        <h3 id="resultTitle"></h3>
+        <p id="resultMsg"></p>
+        <button class="btn-secondary" onclick="resetQuiz()">Try Again ↩</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — MINI GAME (Catch the Hearts)
+  ═══════════════════════════════════════════ -->
+  <section id="game" class="section game-section">
+    <div class="section-header">
+      <h2>Catch the Hearts 💖</h2>
+      <p>Click every falling heart before time runs out!</p>
+    </div>
+
+    <div class="game-wrapper">
+      <div class="game-hud">
+        <span>Score: <strong id="gameScore">0</strong></span>
+        <span>Time: <strong id="gameTimer">30</strong>s</span>
+        <span>Best: <strong id="gameBest">0</strong></span>
+      </div>
+      <div class="game-arena" id="gameArena">
+        <div class="game-start-overlay" id="gameStartOverlay">
+          <p>Ready to catch some love?</p>
+          <button class="btn-primary" onclick="startGame()">Play ♥</button>
+        </div>
+      </div>
+      <div class="game-over-overlay hidden" id="gameOverOverlay">
+        <p id="gameOverMsg"></p>
+        <button class="btn-primary" onclick="startGame()">Play Again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 — VIDEO / TYPED MESSAGE
+  ═══════════════════════════════════════════ -->
+  <section id="message" class="section message-section">
+    <div class="section-header">
+      <h2>A Letter to You</h2>
+      <p>From my heart to yours</p>
+    </div>
+
+    <!-- Easter Egg 3: a tiny butterfly -->
+    <span class="easter-egg" data-msg="Butterflies. That's what you give me, every single day. 🦋" style="bottom: 20px; right: 20px; font-size:1.2rem; opacity:0.2;">🦋</span>
+
+    <div class="message-box">
+      <!-- ✏️ Replace this video URL or remove the video block entirely -->
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/dwUrWJLXGrM"
+          title="Our Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p class="video-caption">✏️ A special message from me to you, captured so we can relive this forever ❤️</p>
+      </div>
+
+      <div class="typed-message-wrap">
+        <p class="typed-message" id="typedMessage"></p>
+        <span class="typed-cursor">|</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6 — SECRET PASSWORD
+  ═══════════════════════════════════════════ -->
+  <section id="secret" class="section secret-section">
+    <div class="section-header">
+      <h2>Our Secret 🔒</h2>
+      <p>Enter the date that started everything</p>
+    </div>
+
+    <div class="secret-box">
+      <p class="secret-hint">✏️ Hint: When did we first meet? (format: DDMMYYYY)</p>
+      <div class="secret-input-row">
+        <input type="text" id="secretInput" class="secret-input" placeholder="Enter the date..." maxlength="20"/>
+        <button class="btn-primary" onclick="checkPassword()">Unlock ♥</button>
+      </div>
+      <p class="secret-error hidden" id="secretError">❌ Not quite! Think harder, love... 😅</p>
+
+      <!-- Hidden love letter — revealed on correct password -->
+      <div class="love-letter hidden" id="loveLetter">
+        <div class="letter-paper">
+          <h3>My Dearest Jiu,</h3>
+          <!-- ✏️ CUSTOMIZE: Write your love letter here -->
+          <p>
+            Moi khodai bisarisilu je life t kunuba aahok jar aagot moi truly ji hoi sob dhuniya ke express koribo paru....nahole khokolure aagot nijor kunuba nahoi kunuba eta side tu lukuai rokhai jai....kintu bhabisilu xei egorakhi aahibo life t tar pisot moi sob kobo parim....mur life r dukh xukh sob....mur story share koribo parim....jiye mur sob kotha khuniu judge nakoribo....kintu ketiyau bhoba nasilu je xeidin tu eman joldi aahibo....to be honest family r bahire mur female interaction eman naiu...toh doubt u hoisile nijoke je aahibo ne nai kunuba ba ....but 26 nov 2024 t bhagwan e pothale karubak mur life le...tar pora lahe lahe mur life r enekua eta part hoi gl puja bula suwali joni je eta time t bahut ugul thugul lagi gol....buji pua nasilu je xei ugul thugul tue khosa prem hoi ...kintu jetiya express korilu xei ugul thugul khini 30 march 2025 t tetiya moi to be honest bhabisilu je aaji sage onto poribo aaru aamar eman din r daily conversation r ....tai sage beya pai eri jaboge....first line tu khosa hol baru eta chapter close hoi eta natun chapter khul khale life r....kintu second line tu complete uluta hol ....najanu kenekoi but duyure hridoy mil khale aaru eta natun journey r start hol eku najonake eku nabhobake
+          </p>
+          <p>
+            Xeidinare pora protitu din aarombha u tumare pora hoi xekh u tumatei hoi....prothom dina jiman special bhabisilu xei speciality tu etiya bhabilue soku r aagot bhahi pore ..edin dudin koi aaguai goi goi aaji 365 days complete korilu buli bissakhe nahoi sun...mon t etiya maje maje bhahi aahe ppm r kotha...kenekoi je kotha patisilu xeibur.....kintu khomoy eman besi nisthur je khi karubabe narokhe....khomoy eman khunkale par hoi jai je tolokiboi nuari... Ketiyaba lage gutei jibon aasue tumar log t nki ...ketiyaba aakou lage one year holei ne aarombha kora....ei ebosorat laaj r pora aarombha korisilu duitai...kiss r kotha patibou eman laaj lagisile....tar pora goi goi etiya sasun dine ratiye vc kori sob koru yaar.....kenekoi aami eman close hoisu...kenekoi aamak aaru close kori kori ni aase aamar khun ....bahut bhal lage khun eibur bhabile jiu ....etiya ei sthan t aasu ..najanu one year pisot khomoy e kiman. Aaguai nibo aamak ...enekoiye jenekoi eta eta koi din bur par hoise tenekoiye maah par hb bosor par hb... ultimately aamar morom kintu aaru bahiye goi thakibo khun
+          </p>
+          <p>
+            Khun aami life partner hisabe start korisu...etiya kintu study partner hb lagibo .. duyu ekeloge etai aantuk support di jenekoi aaguai goi aasu tenekoiye aaguai goi thaku .. deuta k herua r pora majote life t kebol nijok tolole nami goi thoka he dekhisilu ...kintu tumak log puar pora aakou dekhun puhor dekha paisu re....etiya lage aakou nijoke xei aagor manas tur nisina....kosto kori fol u paisu nisina lage....aaru eibur khokolu change te biggest factor tu tumiye jiu ..toh khodai muk life t enekoiye lage tumak catalyst hisabe,mur energy r source hisabe ...etiya eta bosorhe goise enekoiye hazar ta basar jabo kintu manas aaru puja khodai ekeloge aaguai jabo buli bissakh rakhisu mon t
+          </p>
+          <p>
+            At the the bahut special moment hoi..first dina start houte kua nisina etiyau moi pighliye aasu de tur premot 🫠🫠🫠...dibo sage pora nai moi jiman khini tumi deserve kora...khomoy aaru parithitir bandhot aasu je....kintu jetiya xei opportunity tu paam bahut bhalke enjoy korim jiu.....aaru jetiya ei msg tu poha na ebar murloi sai hahiba ha bhalke bahut bhal lagibo khun....At the end again <b><i>Happy Anniversary jiu 😘😘😘😘😘😘😘😘😘😘😘</i></b>...<b>Ummmmaaaaahhhhhhhhhhh 😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘</b>.....<i>Thank you for being you...For being mine.....For letting me be yours 🫠🫠🫠</i>
+          </p>
+          <p class="letter-sign">With all my love, always,<br/><em>✏️ Your life-partner Jiu</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 7 — FUTURE PLANS
+  ═══════════════════════════════════════════ -->
+  <section id="future" class="section future-section">
+    <div class="section-header">
+      <h2>Our Future Plans</h2>
+      <p>Everything we still get to do 🌙</p>
+    </div>
+
+    <div class="future-grid" id="futureGrid">
+      <!-- ✏️ CUSTOMIZE: Edit these cards in script.js under futurePlans array -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 8 — FINAL PAGE
+  ═══════════════════════════════════════════ -->
+  <section id="final" class="section final-section">
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Easter Egg 4: hidden at the very bottom -->
+    <span class="easter-egg" data-msg="The end of the page… but never the end of us. 💞" style="bottom:10px; left:10px; opacity:0.1; font-size:0.6rem;">p.s.</span>
+
+    <div class="final-content">
+      <div class="final-hearts">
+        <span>♥</span><span>♥</span><span>♥</span>
+      </div>
+      <h2 class="final-title">Happy 1 Year</h2>
+      <!-- ✏️ CUSTOMIZE: Change names and date -->
+      <p class="final-names">Manas &amp; Puja</p>
+      <p class="final-date">✏️ 30 March, 2025 — ♥ — Today</p>
+      <p class="final-message">
+        Here is to every moment we have shared, every memory we have made,<br/>
+        and every adventure still waiting for us.<br/>
+        <strong>I love you. Today. Tomorrow. Always.</strong>
+      </p>
+      <button class="btn-primary confetti-btn" onclick="launchConfetti()">🎉 Celebrate!</button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EASTER EGG POPUP MODAL
+  ═══════════════════════════════════════════ -->
+  <div class="egg-modal hidden" id="eggModal">
+    <div class="egg-modal-inner">
+      <button class="egg-close" onclick="closeEggModal()">✕</button>
+      <div class="egg-hearts">💕</div>
+      <p id="eggModalMsg"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
